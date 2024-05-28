@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'AdobeKaiti';
+    src: url('fonts/AdobeKaiti.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'FZFWZhuZiABiaoTMCJW';
+    src: url('fonts/FZFWZhuZiABiaoTMCJW.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CharisSIL';
+    src: url('fonts/CharisSIL-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SBLHbrw';
+    src: url('fonts/SBLHbrw.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GFSPorson';
+    src: url('fonts/GFSPorson.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Times';
+    src: url('fonts/times.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: url('fonts/Spectral-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'BundesSerif';
+    src: url('fonts/BundesSerif-Web-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SimonciniGaramond';
+    src: url('fonts/SimonciniGaramondStd.woff2') format('woff2');
+}
+
+body {
+    font-family: 'AdobeKaiti', sans-serif;
+    margin: 2.5cm;
+}
+
+.section {
+    font-size: 12pt;
+}
+
+.title {
+    font-family: 'FZFWZhuZiABiaoTMCJW', serif;
+    font-size: 16pt;
+}
+
+.reference {
+    font-size: 10pt;
+    color: gray;
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.annotate {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.original-text {
+    order: 2;
+}
+
+.annotation {
+    color: rgb(128, 128, 128);
+    order: 3;
+}
+
+.ipa {
+    color: rgb(135, 206, 250);
+    order: 1;
+}
+
+/* Specific language styles */
+.hebrew .original-text {
+    font-family: 'SBLHbrw', serif;
+}
+
+.greek .original-text {
+    font-family: 'GFSPorson', serif;
+}
+
+.latin .original-text {
+    font-family: 'Times', serif;
+}
+
+.french .original-text {
+    font-family: 'Spectral', serif;
+}
+
+.german .original-text {
+    font-family: 'BundesSerif', serif;
+}
+
+.italian .original-text {
+    font-family: 'SimonciniGaramond', serif;
+}
